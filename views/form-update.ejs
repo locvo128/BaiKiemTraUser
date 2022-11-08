@@ -1,0 +1,12 @@
+<h1>Sửa user</h1>
+
+<form action="/update" method="POST"> 
+    ID: <input type="text" name="id" value="<%= user.id %>"><br>
+    Phone: <input type="number" name="Phone" value="<%= user.Phone %>"><br>
+    Password: <input type="password" name="Password" value="<%= user.Password %>"><br>
+    TypeRegister: <input type="text" name="TypeRegister" value="<%= user.TypeRegister %>"><br>
+    TokenLogin: <input type="text" name="TokenLogin" value="<%= user.TokenLogin %>"><br>
+    DeviceID: <input type="text" name="DeviceID" value="<%= user.DeviceID %>"><br>
+    FcmTokens: <input type="text" name="FcmTokens" value="<%= user.FcmTokens %>"><br>
+    <button type="submit">Sửa user</button>
+</form>

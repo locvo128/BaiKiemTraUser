@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Danh sách user</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1>Danh sách user</h1>
+
+    <table border="1">
+      <a href="/form-add"><button>Thêm user</button></a> <br>
+      <tr>
+        <th>ID</th>
+        <th>Phone</th>
+        <th>Password</th>
+        <th>TypeRegister</th>
+        <th>TokenLogin</th>
+        <th>DeviceID</th>
+        <th>FcmTokens</th>
+      </tr>
+       <%users.forEach(item =>{ %>
+        <tr>
+          <td><%= item._id %> </td>
+          <td><%= item.Phone %> </td>
+          <td><%= item.Password %> </td>
+          <td><%= item.TypeRegister %> </td>
+          <td><%= item.TokenLogin %> </td>
+          <td><%= item.DeviceID %> </td>
+          <td><%= item.FcmTokens %> </td>
+          <td><a href="/form-update/<%= item._id %>">Update</a> || <a href="/form-delete/<%= item._id %>">Delete</a></td>
+        </tr>
+      <% }) %>
+    </table>
+  </body>
+</html>
