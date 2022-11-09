@@ -5,7 +5,7 @@ var mongoose = require('mongoose');
 //CONECTING DB// APP CONFI
 mongoose.connect('mongodb+srv://locls128:locls128@cluster0.erwqzoa.mongodb.net/test', {
   useNewUrlParser: true,
-  useCreateIndex: true,
+  useCreateIndex: true, 
   useFindAndModify: false 
 });
 
